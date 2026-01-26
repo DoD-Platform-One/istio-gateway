@@ -51,7 +51,11 @@
   ],
   "postUpgradeTasks": {
     "commands": [
-      "bump-chart-yaml",
+      // Use match-chart-yaml-appversion instead of bump-chart-yaml because this is a
+      // passthrough chart where the chart version tracks appVersion directly.
+      // bump-chart-yaml incorrectly increments minor version on patch updates
+      // (e.g., 1.28.0 -> 1.28.1 would produce 1.29.0-bb.0 instead of 1.28.1-bb.0)
+      "match-chart-yaml-appversion",
       "bump-changelog '{{#each upgrades}}- {{depName}} {{currentVersion}} -> {{newVersion}}\\n{{/each}}'",
       "regenerate-helm-docs"
     ],
