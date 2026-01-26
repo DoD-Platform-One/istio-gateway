@@ -1,12 +1,12 @@
 dependencies:
 - name: gluon
   repository: oci://registry1.dso.mil/bigbang
-  version: 0.9.6
+  version: 0.9.7
 - name: gateway
   repository: https://istio-release.storage.googleapis.com/charts
-  version: 1.28.0
+  version: 1.28.3
 - name: bb-common
   repository: oci://registry1.dso.mil/bigbang
-  version: 0.12.1
-digest: sha256:531fb88c16cb1b4c77691562937b37596d93e8c66638b6fa031bf6cf21b7a634
-generated: "2025-12-31T07:27:57.369893158Z"
+  version: 0.13.0
+digest: sha256:554f9932ccc708790b0cc592ed5df9db982d5acbb515c3601f9fafaccfd5bc18
+generated: "2026-01-20T07:28:13.698878964Z"
