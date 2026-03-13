@@ -4,9 +4,9 @@ dependencies:
   version: 0.9.8
 - name: gateway
   repository: https://istio-release.storage.googleapis.com/charts
-  version: 1.29.0
+  version: 1.29.1
 - name: bb-common
   repository: oci://registry1.dso.mil/bigbang
-  version: 0.14.0
-digest: sha256:385c9d55173552da2b1237c2b56930f28d6ad602c065f23553e7752d446979c6
-generated: "2026-02-18T07:20:41.412442917Z"
+  version: 0.14.1
+digest: sha256:41f735730e4507d3ed05fd3f3799669580a77dee5b1614333810870f16fef0c0
+generated: "2026-03-11T14:34:35.843200053Z"
